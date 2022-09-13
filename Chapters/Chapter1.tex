@@ -208,14 +208,14 @@ Tables are an important way of displaying your results, below is an example tabl
 {\small
 \begin{verbatim}
 \begin{table}
-\caption{The effects of treatments X and Y on the four groups studied.}
-\label{tab:treatments}
+\caption{The methods and Effects of Pre-Heating Treatments reported in different articles}
+\label{tab:overview}
 \centering
 \begin{tabular}{l l l}
 \toprule
-\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
+\tabhead{Article} & \tabhead{Pre-Heating Method} & \tabhead{Reported increase of strength} \\
 \midrule
-1 & 0.2 & 0.8\\
+\cite{kishore2019effect} & 0.2 & 0.8\\
 2 & 0.17 & 0.7\\
 3 & 0.24 & 0.75\\
 4 & 0.68 & 0.3\\
@@ -226,19 +226,23 @@ Tables are an important way of displaying your results, below is an example tabl
 }
 
 \begin{table}
-\caption{The effects of treatments X and Y on the four groups studied.}
-\label{tab:treatments}
+\caption{The methods and Effects of Pre-Heating Treatments reported in different articles}
+\label{tab:overview}
 \centering
 \begin{tabular}{l l l}
 \toprule
-\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
+\tabhead{Article} & \tabhead{Pre-Heating Method} & \tabhead{Reported increase of strength} \\
 \midrule
-1 & 0.2 & 0.8\\
-2 & 0.17 & 0.7\\
-3 & 0.24 & 0.75\\
-4 & 0.68 & 0.3\\
+\cite{kishore2019effect} & StripIR lamps (2x500W) & 80\% for $T_{cold} = 40$ \textcelsius{}  \\
+\cite{du2016improved} & IR fiber laser (2x1.75W) & 195\% for lateral laser assisted heating at 20mm/s printspeed \\
+\cite{ravi2016process} & near IR 802nm laser (2W) & 50\% for pre-deposition at 1mm distance and 1-10mm/s printspeed\\
+\cite{kishore2017infrared} & StripIR lamps(2x500W) & 100\% for $T_{cold} = 95$ \textcelsius{}\\
+\cite{ravoori2019nozzle} & Radiation heating with metal block & 60\% for combined pre- and postdeposition at 205 \textcelsius{} and 0.95mm distance \\
+\cite{lee2021mechanical} & Halogen Spot Heaters (2x75W) & \>100\% for pre-/post deposition at 52W \\
+\cite{andreu2022hybrid} & Hot Rollers with heating element (40W) & 38,8\% at 120 \textcelsius{} \\
+\cite{sabyrov2020enhancing} & laser diode (5W9 & 10.16\% for 2.84W \\
 \bottomrule\\
-\end{tabular}
+\end{tabular} 
 \end{table}
 
 You can reference tables with \verb|\ref{<label>}| where the label is defined within the table environment. See \file{Chapter1.tex} for an example of the label and citation (e.g. Table~\ref{tab:treatments}).
